@@ -19,6 +19,18 @@
 
 An offline Android stacking game built with Kotlin and Jetpack Compose. Find your rhythm, line up each slab, and build your tallest tower.
 
+## Screenshots
+
+<div align="center">
+
+| Home | Gameplay | Paused | Game Over |
+|:---:|:---:|:---:|:---:|
+| <img src="screenshots/01_home.png" width="200" alt="Tower Stack home screen with Play button and sound settings" /> | <img src="screenshots/02_gameplay.png" width="200" alt="Tower Stack gameplay with an isometric tower and score" /> | <img src="screenshots/03_paused.png" width="200" alt="Pause menu with Resume, Restart, and Home controls" /> | <img src="screenshots/04_game_over.png" width="200" alt="Game-over screen with final score and Play Again button" /> |
+
+</div>
+
+Captured from the running Android app on an emulator.
+
 ## Features
 
 - One-tap stacking with movement alternating between two world axes.
@@ -104,7 +116,7 @@ app/src/test/java/com/game/towerstack/
 
 `testDebugUnitTest` and `assembleDebug` both PASSED on this workspace. Seven game test methods cover full overlap, partial overlap from both sides on both axes, edge contact, complete misses, proportional perfect tolerance, retained and removed sizes/centers, restart, pause/resume, double-placement guards, and delta clamping. The existing template unit test also passed.
 
-No device was connected (`adb devices` was empty). On-device visual inspection, instrumentation tests, audio/haptic checks, and refresh-rate/lifecycle interaction checks have not been run.
+Home, gameplay, pause/resume, and game-over screens were opened and visually inspected on an Android emulator to capture the gallery above. Physical-device testing, instrumentation tests, audio/haptic checks, and refresh-rate/lifecycle interaction checks have not been run.
 
 Build outputs, local SDK settings, IDE files, and signing keys are excluded from version control.
 
